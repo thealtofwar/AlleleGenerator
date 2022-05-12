@@ -23,5 +23,17 @@ function simulate() {
         }
         resultarr.push(res);
     }
-    result.innerText = `Results: ${resultarr.join(" ")}`;
+    let Aa = 0;
+    let aa = 0;
+    let AA = 0;
+    for (let i = 0; i < resultarr.length; i++) {
+        if (resultarr[i] === "AA") {
+            AA++;
+        } else if (resultarr[i] === "aa") {
+            aa++;
+        } else {
+            Aa++;
+        }
+    }
+    result.innerHTML = `Results: ${resultarr.join(" ")}<br><br>AA: ${AA}<br>aa: ${aa}<br>Aa: ${Aa}`;
 }
