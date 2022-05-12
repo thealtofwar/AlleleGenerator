@@ -1,0 +1,2 @@
+# AlleleGenerator
+Generates alleles randomly
