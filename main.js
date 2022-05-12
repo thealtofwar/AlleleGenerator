@@ -3,6 +3,17 @@ const freqDom = document.getElementById("frequencyofdom");
 const freqRec = document.getElementById("frequencyofrec");
 const result = document.getElementById("result");
 
+freqDom.addEventListener("input", update);
+freqRec.addEventListener("input", update);
+
+function update() {
+    if (this === freqDom) {
+        freqRec.value = 100 - parseInt(freqDom.value);
+    } else {
+        freqDom.value = 100 - parseInt(freqRec.value);
+    }
+}
+
 function simulate() {
     let sims = parseInt(timesToRun.value);
     let domFreq = parseInt(freqDom.value) / 100;
