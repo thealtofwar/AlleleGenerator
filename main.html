@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+</head>
+
+<body>
+    <table>
+        <tr>
+            <td>
+                <label for="timestorun">Times to run simulation: </label>
+            </td>
+            <td>
+                <input type="number" id="numSimulations" step="1">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="frequencyofdom">Frequency of dominant A allele (as percent)</label>
+            </td>
+            <td>
+                <input type="number" id="frequencyofdom" step="1">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="frequencyofrec">Frequency of recessive a allele (as percent)</label>
+            </td>
+            <td>
+                <input type="number" id="frequencyofrec" step="1">
+            </td>
+        </tr>
+    </table>
+    <button onclick="simulate()">Simulate!</button>
+    <p id="result">
+        Results:
+    </p>
+    <script defer src="main.js"></script>
+</body>
+
+</html>
